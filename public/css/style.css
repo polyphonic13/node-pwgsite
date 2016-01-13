@@ -62,7 +62,13 @@ a:hover {
 }
 
 #column2 {
-	float: right;
+/*	float: right;*/
+    width: 94%;
+    height: 150px;
+    position: absolute;
+    /* bottom: 0; */
+    left: 1%;
+    top: 350px;
 }
 
 #section_container {
