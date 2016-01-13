@@ -63,11 +63,11 @@ html
               .text_md
                 | feel free to contact us to provide feedback on our games, give us suggestions for new games, or to just say hello!
               ul.list_2.list_stacked
-                li(onclick="PolyworksGames.openLink('https://facebook.com/kekevscaterpillars');")
+                li(onclick="PolyworksController.openLink('https://facebook.com/kekevscaterpillars');")
                   a.btn.btn_default.text_lg(href='https://facebook.com/kekevscaterpillars', target='_"blank"') facebook
-                li(onclick="PolyworksGames.openLink('https://www.google.com/+PolyworksgamesProfile');")
+                li(onclick="PolyworksController.openLink('https://www.google.com/+PolyworksgamesProfile');")
                   a.btn.btn_default.text_lg(href='https://www.google.com/+PolyworksgamesProfile', target='_"blank"') google+
-                li(onclick="PolyworksGames.openLink('https://twitter.com/kekenews');")
+                li(onclick="PolyworksController.openLink('https://twitter.com/kekenews');")
                   a.btn.btn_default.text_lg(href='https://twitter.com/kekenews', target='_"blank"') twitter
                 li
                   a.btn.btn_default.text_lg(href='mailto:contact@polyworksgames.com') email
@@ -83,12 +83,12 @@ html
             .content_holder
               .text_md check out our current and upcoming games
               ul.list_2.list_stacked
-                li(onclick="PolyworksGames.openGameModal('doy');")
+                li(onclick="PolyworksController.openGameModal('doy');")
                   .btn.btn_default.text_lg dreams of yesterday
-                li(onclick="PolyworksGames.openGameModal('farkle');")
+                li(onclick="PolyworksController.openGameModal('farkle');")
                   .btn.btn_default.text_lg farkle safari
-                li(onclick="PolyworksGames.openGameModal('keke');")
+                li(onclick="PolyworksController.openGameModal('keke');")
                   .btn.btn_default.text_lg keke and the grey expanse
     canvas#ee_canvas.hide
-    script(src='js/polyworks.js')
+    script(src='js/polyworks_controller.js')
     

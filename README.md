@@ -11,7 +11,7 @@ run local (localhost:9000)
 
 ### Local Database
 local mongo 
-./mongod --dbpath ~/Documents/code/projects/polyworksgames/data/
+./mongod --dbpath ~/Documents/code/projects/polyworksio/data/
 
 ./mongo util
 use ghost
