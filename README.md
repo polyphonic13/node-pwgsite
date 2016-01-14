@@ -23,4 +23,4 @@ ssh -i "polyair01-east.pem" ec2-user@ec2-52-22-60-79.compute-1.amazonaws.com
 sudo forever start bin/www
 
 ### Copying to EC2: 
-scp [-r] <tgt> -i "polyair01-east.pem" ec2-user@ec2-52-22-60-79.compute-1.amazonaws.com:/home/ec2-user/public/
+scp -i "polyair01-east.pem"  [-r] <tgt> ec2-user@ec2-52-22-60-79.compute-1.amazonaws.com:/home/ec2-user/
