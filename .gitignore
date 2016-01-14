@@ -1,3 +1,4 @@
 data/*
 *.pem
 bin/amazon.json
+ec2.md
