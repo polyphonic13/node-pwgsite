@@ -114,7 +114,7 @@ a:hover {
 	border-style: solid;
 	margin-top: 1%;
 	width: 96%;
-	padding: 2%;
+/*	padding: 2%;*/
 	cursor: pointer;
 }
 
@@ -312,7 +312,33 @@ a:hover {
 	}
 }
 
-@media all and (max-width: 530px) {
+@media all and (max-width: 600px) {
+	h1, h2 {
+		-webkit-margin-before: 0.2em;
+		-webkit-margin-after: 0.2em;
+	}
+
+	.text_xl {
+		font-size: 150%;
+	}
+	.text_lg {
+		font-size: 80%;
+	}
+
+	.text_md {
+		font-size: 75%;
+	}
+
+	.text_sm {
+		font-size: 40%;
+	}
+
+	.text_xs {
+		font-size: 20%;
+	}
+}
+
+@media all and (max-width: 550px) {
 	#site {
 		background: url(../img/polyworks_p.png) no-repeat;
 		background-position: center 66%;
@@ -329,6 +355,10 @@ a:hover {
 		padding-bottom: 16%;
 	}
 
+	.list_stacked >li {
+		padding: 2%;
+	}
+	
 	.column {
 		width: 96%;
 		padding: 0 1% 0 1%;

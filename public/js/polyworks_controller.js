@@ -149,7 +149,7 @@ var PolyworksController = function() {
 			containerEls[id] = document.getElementById(containerId);
 		}
 		
-		hideShowContainer(navIds[0] + '_container');
+		// hideShowContainer(navIds[0] + '_container');
 	})();
 
 	function _addClickHandler(el, containerId) {
