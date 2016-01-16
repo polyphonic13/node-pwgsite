@@ -37,7 +37,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 
 var env = process.env.NODE_ENV || 'production';
-var config = require('./env.json')[env];
+var aws = require('./bin/amazon.json');
+var config = aws.environment[env];
 config.env = env;
 
 // passport config
@@ -49,6 +50,9 @@ passport.deserializeUser(Account.deserializeUser());
 // mongoose
 // mongoose.connect('mongodb://localhost/passport_local_mongoose_express4');
 mongoose.connect(config.db);
+mongoose.connection.once('open', function() {
+	console.log('mongoose connection open');
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
